@@ -1,19 +1,23 @@
-import os
-from cryptography import x509
-import base64
-from cryptography.hazmat.primitives import serialization
-from cryptography.hazmat.backends import default_backend
-from cryptography.hazmat.primitives.asymmetric import padding
-from cryptography.hazmat.primitives import hashes
+#importamos las librerias 
+import os                       # Para manejar rutas de archivos
+from cryptography import x509    # Para manejar certificados X.509
+import base64                    # Para codificar y decodificar en Base64
+from cryptography.hazmat.primitives import serialization   # Para manejar claves criptográficas
+from cryptography.hazmat.backends import default_backend    # Backend criptográfico
+from cryptography.hazmat.primitives.asymmetric import padding   # Para aplicar padding en firmas
+from cryptography.hazmat.primitives import hashes  #Para aplicar funciones hash
 
 
-
+# Ruta del archivo de clave privada 
 key_path = "CAÑF770131PA3_20230509114635\Claveprivada_FIEL_CAÑF770131PA3_20230509_114635.key"
+
+#creamos la variable de la llave privada
 password = "12345678a".encode("utf-8")
-# Leer la llave privada en formato DER
+# Leemos  la llave privada 
 with open(key_path, "rb") as key_file:
     key_data = key_file.read()
 
+#intentamos carcar la llave privada utilizando la contraseña
 try:
     private_key = serialization.load_der_private_key(
         key_data, password=password, backend=default_backend()
@@ -64,12 +68,16 @@ def generar_cadena_original(xml_path, xslt_path):
     cadena_original = str(transform(xml_tree))
     return cadena_original.strip()
 
+# Rutas del XML y la hoja de estilo XSLT 
 xml_path = "cfdi.xml"
 xslt_path = "cadenaoriginal_4_0.xslt"
 
+# Generar la cadena original a partir del XML y la hoja de estilo XSLT
 cadena_original = generar_cadena_original(xml_path, xslt_path)
 print("Cadena original generada:", cadena_original)
 
+
+# Función para firmar la cadena original usando la llave privada
 def firmar_cadena(private_key, cadena_original):
     firma = private_key.sign(
         cadena_original.encode("utf-8"),
@@ -78,10 +86,11 @@ def firmar_cadena(private_key, cadena_original):
     )
     return base64.b64encode(firma).decode()
 
+# Generamos la firma digital de la cadena original
 firma_digital = firmar_cadena(private_key, cadena_original)
 print("Firma digital generada:", firma_digital)
 
-
+# Función para insertar la firma y el certificado en el XML del CFDI
 def insertar_firma_en_xml(xml_path, firma, certificado):
     # Cargar XML
     tree = ET.parse(xml_path)
@@ -94,5 +103,6 @@ def insertar_firma_en_xml(xml_path, firma, certificado):
     # Guardar el XML firmado
     tree.write("cfdi_firmado.xml", encoding="utf-8", xml_declaration=True)
 
+# Insertar la firma y el certificado en el XML
 insertar_firma_en_xml(xml_path, firma_digital, cert_base64)
 print("CFDI firmado guardado como 'cfdi_firmado.xml'")
