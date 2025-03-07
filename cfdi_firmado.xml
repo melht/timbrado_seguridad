@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd" Version="4.0" Serie="A" Folio="12345" Fecha="2024-03-05T12:00:00" FormaPago="01" CondicionesDePago="Contado" SubTotal="1000.00" Moneda="MXN" Total="1160.00" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="64000" Sello="c3jzOJkW2dbZKfQ2Ml42qalA/o5amS+hiKpQGUqSsR5craPGy1SpiwVTqtNvUhEliKuhuzf5TlPjj55R0DLmLY5hpomABcInNJ0uovdEcDG6R65HB1W4ng2cma19ojxOk2UfRGnmNYgPiMHgUV1Y3AyKJymyRsJ5N4H1+XEPP2BjMwlxRy0HBF97ElQ4BwR+3QuT1gIjGEiSTqBbMi/mQY4E877D7b9jE3Je/pKrbM06uYG38xpXE6sj2Ueu4NiYJNyJC1pm0QvlycQTVu2pDDrtxC1Ckfv5JXwssjswYEN5Tc4rqvhQPt+zNScp8TbLRFcM+KEQbXUuikKMmEpiag==" Certificado="MIIF5DCCA8ygAwIBAgIUMzAwMDEwMDAwMDA1MDAwMDMyODMwDQYJKoZIhvcNAQELBQAwggErMQ8wDQYDVQQDDAZBQyBVQVQxLjAsBgNVBAoMJVNFUlZJQ0lPIERFIEFETUlOSVNUUkFDSU9OIFRSSUJVVEFSSUExGjAYBgNVBAsMEVNBVC1JRVMgQXV0aG9yaXR5MSgwJgYJKoZIhvcNAQkBFhlvc2Nhci5tYXJ0aW5lekBzYXQuZ29iLm14MR0wGwYDVQQJDBQzcmEgY2VycmFkYSBkZSBjYWxpejEOMAwGA1UEEQwFMDYzNzAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBDSVVEQUQgREUgTUVYSUNPMREwDwYDVQQHDAhDT1lPQUNBTjERMA8GA1UELRMIMi41LjQuNDUxJTAjBgkqhkiG9w0BCQITFnJlc3BvbnNhYmxlOiBBQ0RNQS1TQVQwHhcNMjMwNTA5MTgwNjM0WhcNMjcwNTA4MTgwNjM0WjCB2TEiMCAGA1UEAxQZRkVSTkFORE8gQ0FTVElMTE8g0UFCQVJSTzEiMCAGA1UEKRQZRkVSTkFORE8gQ0FTVElMTE8g0UFCQVJSTzEiMCAGA1UEChQZRkVSTkFORE8gQ0FTVElMTE8g0UFCQVJSTzELMAkGA1UEBhMCTVgxKTAnBgkqhkiG9w0BCQEWGnBydWViYXMuc2F0QHBydWViYXMuZ29iLm14MRYwFAYDVQQtFA1DQdFGNzcwMTMxUEEzMRswGQYDVQQFExJDQU5GNzcwMTMxSEJDU0JSMDgwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCWfchQqjX/RKV7QlTU7ka3drZGBrexbO0x2pOdddbIzWLn2ET4AsJA4RBUYzv2wYkaT1fiD6ErYGPwwAwpRjpiyLEzNxCmBdWAIkZKmFasFUCJ4JuOwHZGlp8tFumaakYfLl20JDG5Qgtd5h9fWBZk2OMMzVIhfUVlDgV/V0OZSvBUFPnW7+2Wvf4aoDtV/wN327CdTvFkGtIomXtEG6U/mOBlCeGytbg7tWu6wOXR7D8TLtIO90mnpS8ynyWLZVd194QLkKE0i20nTbMLUrY1YFT/Jis4BXLNPuSsz3GM79CPxzInNMb0AcT+pBRWAXvpIn8W5h46kHWy+mkQY5HJAgMBAAGjTzBNMAwGA1UdEwEB/wQCMAAwCwYDVR0PBAQDAgPYMBEGCWCGSAGG+EIBAQQEAwIFoDAdBgNVHSUEFjAUBggrBgEFBQcDBAYIKwYBBQUHAwIwDQYJKoZIhvcNAQELBQADggIBADlRwlpK2Fjge3m1jaJJMq3aG/XNR/VlAlG96kxmicx0+sa8ZXP0c0hKUFg8BgRxRGUnsCCRDhoOUBgcNgi3Q+NFaYyvo+GslEU2mOBej0lkLMPbCiAdseuYRFeAbQ77Cgkh78LNds2zc5mEwzRQe1iknhPFuW/GvYVPB1RBGWvqiLsnkOQ8qhGH17jWAQSsgb69z+kXuqIsAdBLBrCVscm27Y7h7V20XWbeK04EcOTD9CDg0FNbuH0AH5trq0Z5wwv6iFafVo1M9u14nLUtPRIcnjQ7eY6Zz8ChmoUEft+R9u4t528ZUOwUxHde+vdu0Bkiq+CHiX3+sM+21UOJNcUf2MH9/yU6le0pwPW04i6C3kLrJ9gfZeJ0KvuTaxdkx1AX/phj/cJTb2VPe7wgC9CknxmRlvBnwYmlmOZtktz9ACTRxbevw5lGbG7a7SS6cDEx1ArW+jVCDAE3LSzznZltONhDilciJszrssLh62tI9kc1DXqPuya6s4+pbQFT4xpR6O+OICZeMqAXIi4vEP//o4ah3n9mxs+B/DZvwZC8s61sagpsB57xlcqj7ebBok1Hke46JrBohMkJvA1bqCbnFm5iT//Ma9DwasSrz96cUwB8D3gJVKYH1wHg3EK2H55rw+8MXT11wb875bClcpO6F5PlBJmXILiu9KGsxnKT">
+
+    <cfdi:Emisor Rfc="AAA010101AAA" Nombre="EMPRESA EMISORA S.A. DE C.V." RegimenFiscal="601"/>
+    
+    <cfdi:Receptor Rfc="BBB020202BBB" Nombre="CLIENTE EJEMPLO" UsoCFDI="G03"/>
+    
+    <cfdi:Conceptos>
+        <cfdi:Concepto ClaveProdServ="01010101" Cantidad="1" ClaveUnidad="H87" Descripcion="Producto de prueba" ValorUnitario="1000.00" Importe="1000.00">
+            
+            <cfdi:Impuestos>
+                <cfdi:Traslados>
+                    <cfdi:Traslado Base="1000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="160.00"/>
+                </cfdi:Traslados>
+            </cfdi:Impuestos>
+        </cfdi:Concepto>
+    </cfdi:Conceptos>
+
+    <cfdi:Impuestos TotalImpuestosTrasladados="160.00">
+        <cfdi:Traslados>
+            <cfdi:Traslado Base="1000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="160.00"/>
+        </cfdi:Traslados>
+    </cfdi:Impuestos>
+
+</cfdi:Comprobante>
